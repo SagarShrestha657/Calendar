@@ -40,7 +40,7 @@ function WeekView() {
         ))}
       </div>
       {/* Time + Events Grid (Scrollable) */}
-      <div className="grid grid-cols-[40px_repeat(7,1fr)] relative flex-1 overflow-y-scroll scrollbar-thin  border-b-2 border-b-gray-400" >
+      <div className="grid grid-cols-[40px_repeat(7,1fr)] relative flex-1 overflow-y-scroll scrollbar-none  border-b-2 border-b-gray-400" >
         {/* Time Labels */}
         <div className="flex flex-col text-xs text-gray-400  bg-white border-x-2 border-x-gray-400">
           {hours.map((label, idx) => (

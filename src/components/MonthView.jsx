@@ -20,7 +20,7 @@ for (let i = 0; i < 35; i++) {
 const taskTypes = [
   { icon: '🎵', label: 'Music' },
   { icon: '🏀', label: 'Sport' },
-  { icon: '📅', label: 'Meeting' },
+  { icon: '👥', label: 'Meeting' },
 ];
 
 // Background colors for days with tasks
@@ -82,7 +82,7 @@ function MonthView() {
         ))}
       </div>
       {/* 6 rows for weeks with numbers and tasks */}
-      <div className="grid grid-cols-7 gap-1 w-full flex-1 overflow-y-scroll scrollbar-thin p-1">
+      <div className="grid grid-cols-7 gap-1 w-full flex-1 overflow-y-scroll scrollbar-none p-1">
         {daysWithTasks.map((d, i) => (
           <div key={i} className={`h-24 ${d.bgColor ? `${d.bgColor} p-1 flex flex-col rounded shadow-sm` : 'bg-white p-1 flex flex-col'} mb-2`}>
             <span className={`text-xs font-semibold w-full text-center ${d.month === 0 ? 'text-gray-400' : 'text-black'}`}>{d.day}</span>
